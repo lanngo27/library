@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-quiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Book Library</title>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <h1>Book Library</h1>
+    <form>
+        <div class="inputForm">
+            <div class="input">
+                <label for="nameInput">Book</label><br>
+                <input type="text" class="inputBox" name="nameInput" id="nameInput"/>
+            </div>
+            <div class="input">
+                <label for="authorInput">Author</label><br>
+                <input type="text" class="inputBox" name="authorInput" id="authorInput"/>
+            </div>
+            <div class="input">
+                <label for="pagesInput">Pages</label><br>
+                <input type="text" class="inputBox" name="pagesInput" id="pagesInput"/>
+            </div>
+            <div class="input">
+                <label for="statusInput">Status</label><br>
+                <select class="inputSelect" name="statusInput" id="statusInput">
+                    <option value="Read">Read</option>
+                    <option value="Not read">Not read</option>
+                </select>
+            </div>
+        </div>
+        <div class="submitBtnHolder">
+            <input type="submit" value="Submit" class="submitBtn"></input>
+        </div>
+    </form>
+
+    <table class="bookTbl">
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Number of pages</th>
+            <th>Status</th>
+            <th>Delete</th>
+        </tr>
+        <tbody id="bookTableBody"></tbody>
+    </table>
+
+    <footer class="footer">
+        <p>Copyright © 2021 Lan Ngo &nbsp;</p>
+        <a href="https://github.com/lanngo27" target="_blank">
+            <i class="fa fa-github" style="font-size:24px"></i>
+        </a>
+    </footer>
+</body>
+</html>

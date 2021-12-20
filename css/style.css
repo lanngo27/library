@@ -1,0 +1,97 @@
+body {
+    margin-top: 100px;
+    text-align: center;
+    min-height: 85vh;
+    height: 100%;
+    background-color: linen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.label {
+    text-align: left;
+}
+
+p {
+    text-align: left;
+}
+
+.inputSelect {
+    width: 90px;
+    font-size: 15px;
+}
+
+.inputForm,
+.bookTbl,
+.submitBtnHolder {
+    width: 900px;
+    align-items: center;
+}
+
+.submitBtn {
+    margin: 10px 15px 30px 15px;
+    padding: 5px 20px;
+    border: 1px solid darkgrey;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(21, 141, 240);
+    color: white;
+}
+
+button {
+    background-color: red;
+    opacity: 60%;
+    width: 100px;
+    padding: 5px 10px;
+    border: 1px solid darkgrey;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.delete {
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+input:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: auto;
+    width: 100%
+}
+
+table, td, th {
+    padding: 5px;
+    border-bottom: 1px solid darkgrey;
+}
+
+.footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
